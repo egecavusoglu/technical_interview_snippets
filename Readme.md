@@ -1,4 +1,4 @@
-# Technical Interview Questions that I have solved for quick lookup.
+# Technical Interview Questions
 
 ## Linked List
 
