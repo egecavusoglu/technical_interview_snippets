@@ -16,31 +16,37 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
+
 var rotate = function (matrix) {
   // First transpose
   // Then mirror
-  return mirror(transpose(matrix));
+  return matrix.transpose().mirror();
 };
 
-const transpose = (matrix) => {
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = i; j < matrix[0].length; j++) {
-      [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+Object.defineProperty(Array.prototype, "transpose", {
+  value: function () {
+    for (let i = 0; i < this.length; i++) {
+      for (let j = i; j < this[0].length; j++) {
+        [this[i][j], this[j][i]] = [this[j][i], this[i][j]];
+      }
     }
-  }
-  return matrix;
-};
+    return this;
+  },
+});
 
-const mirror = (matrix) => {
-  const width = matrix[0].length;
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < width / 2; j++) {
-      [matrix[i][j], matrix[i][width - j - 1]] = [
-        matrix[i][width - j - 1],
-        matrix[i][j],
-      ];
+Object.defineProperty(Array.prototype, "mirror", {
+  value: function () {
+    const width = this[0].length;
+    for (let i = 0; i < this.length; i++) {
+      for (let j = 0; j < width / 2; j++) {
+        [this[i][j], this[i][width - j - 1]] = [
+          this[i][width - j - 1],
+          this[i][j],
+        ];
+      }
     }
-  }
-  return matrix;
-};
+
+    return this;
+  },
+});
 ```
