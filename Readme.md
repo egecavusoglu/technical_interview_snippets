@@ -13,6 +13,10 @@
 - [Set Matrix Zeroes](./Array&String/SetMatrixZeroes.md)
 - [Rotate Image](./Array&String/RotateImage.md)
 - [Spiral Matrix](./Array&String/SpiralMatrix.md)
+- [Contains Duplicate](./Array&String/ContainsDuplicate.md)
+- [Missing Number](./Array&String/MissingNumber.md)
+- [Find All Numbers Disappeared in Array](./Array&String/FindAllNumbersDisappeared.md)
+- [Single Number](./Array&String/SingleNumber.md)
 
 ## Linked List
 
