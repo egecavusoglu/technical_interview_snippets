@@ -34,3 +34,8 @@
 
 - [Sort Colors](./Sort&Search/SortColors.md)
 - [Median of Two Sorted](./Sort&Search/MedianOfTwoSorted.md)
+
+## Dynamic Programming
+
+- [Buy Sell Stock](./DynamicProgramming/BuySellStock.md)
+- [Climbing Stairs](./DynamicProgramming/ClimbingStairs.md)
