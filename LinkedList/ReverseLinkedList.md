@@ -24,21 +24,13 @@ Output: 5->4->3->2->1->NULL
  */
 
 var reverseList = function (head) {
-  if (!head) return head;
-  if (!head.next) return head;
-  let prevNode = head;
-  let currentNode = head.next ? head.next : head;
-  prevNode.next = null;
-  let nextNode;
-
-  while (currentNode) {
-    nextNode = currentNode.next;
-
-    currentNode.next = prevNode;
-    // console.log(currentNode)
-    prevNode = currentNode;
-    currentNode = nextNode;
+  let prev = null;
+  while (head) {
+    let next = head.next;
+    head.next = prev;
+    prev = head;
+    head = next;
   }
-  return prevNode;
+  return prev;
 };
 ```
