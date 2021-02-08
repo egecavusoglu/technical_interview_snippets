@@ -17,6 +17,11 @@
 - [Missing Number](./Array&String/MissingNumber.md)
 - [Find All Numbers Disappeared in Array](./Array&String/FindAllNumbersDisappeared.md)
 - [Single Number](./Array&String/SingleNumber.md)
+- [Binary Search](./Array&String/BinarySearch.md)
+- [Valid Parentheses](./Array&String/ValidParentheses.md)
+- [Valid Parentheses](./Array&String/ValidParentheses.md)
+- [Rotate Array](./Array&String/RotateArray.md)
+- [Peak Index Mountain](./Array&String/PeakIndexMountain.md)
 
 ## Linked List
 
@@ -24,11 +29,17 @@
 - [Add Two Numbers](./LinkedList/AddTwoNumbers.md)
 - [Add Two Numbers II](./LinkedList/AddTwoNumbers2.md)
 - [Merge K Sorted Lists](./LinkedList/MergeKSortedLists.md)
+- [Merge 2 Sorted Lists](./LinkedList/MergeTwoLists.md)
 
 ## Binary Trees
 
 - [Populating Next Right Pointers in Each Node II](./BinaryTree/NextRightPointer.md)
 - [Lowest Common Ancestor](./BinaryTree/LowestCommonAncestor.md)
+- [Diameter of Binary Tree](./BinaryTree/DiameterBinaryTree.md)
+- [Invert Binary Tree](./BinaryTree/InvertBinaryTree.md)
+- [Level Order Traversal 2](./BinaryTree/InvertBinaryTree.md)
+- [Max Depth](./BinaryTree/InvertBinaryTree.md)
+- [Path Sum](./BinaryTree/PathSum.md)
 
 ## Sort & Search
 
@@ -40,3 +51,10 @@
 - [Buy Sell Stock](./DynamicProgramming/BuySellStock.md)
 - [Climbing Stairs](./DynamicProgramming/ClimbingStairs.md)
 - [Max Subarray](./DynamicProgramming/MaximumSubarray.md)
+
+## Fast & Slow Pointers
+
+- [Delete Duplicates](./FastSlowPointers/DeleteDuplicates.md)
+- [Linked List Cycle](./FastSlowPointers/LinkedListCycle.md)ß
+- [Palindrome Linked List](./FastSlowPointers/PalindromeLinkedList.md)
+- [Remove Linked List Element](./FastSlowPointers/RemoveLinkedListElement.md)
