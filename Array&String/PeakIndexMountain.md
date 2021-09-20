@@ -19,19 +19,18 @@ Output: 1
  * @return {number}
  */
 var peakIndexInMountainArray = function (arr) {
-  let length = arr.length;
-  let mid = Math.floor(arr.length / 2);
-  let offset = 0;
-  while (true) {
-    let left = mid + offset;
-    let right = mid - offset;
-    if (arr[left] > arr[left - 1] && arr[left] > arr[left + 1]) {
-      return mid + offset;
+  // Use Binary search like approach.
+  let left = 0;
+  let right = arr.length - 1;
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    if (arr[mid] > arr[mid - 1] && arr[mid] > arr[mid + 1]) {
+      return mid;
+    } else if (arr[mid] > arr[mid - 1]) {
+      left = mid + 1;
+    } else {
+      right = mid;
     }
-    if (arr[right] > arr[right - 1] && arr[right] > arr[right + 1]) {
-      return mid - offset;
-    }
-    offset++;
   }
 };
 ```

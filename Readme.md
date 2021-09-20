@@ -41,7 +41,7 @@
 - [Path Sum](./BinaryTree/PathSum.md)
 - [Average of Levels in Binary Tree](./BinaryTree/average-of-levels-in-binary-tree)
 - [Minimum Depth of Binary Tree](./BinaryTree/minimum-depth-of-binary-tree.md)
-- [Binary Tree Level Order Traversal]()
+- [Binary Tree Level Order Traversal](./BinaryTree/binary-tree-level-order-traversal.md)
 
 ## Sort & Search
 

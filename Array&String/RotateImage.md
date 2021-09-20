@@ -23,16 +23,14 @@ var rotate = function (matrix) {
   return matrix.transpose().mirror();
 };
 
-Object.defineProperty(Array.prototype, "transpose", {
-  value: function () {
-    for (let i = 0; i < this.length; i++) {
-      for (let j = i; j < this[0].length; j++) {
-        [this[i][j], this[j][i]] = [this[j][i], this[i][j]];
-      }
+Array.prototype.transpose = function () {
+  for (let i = 0; i < this.length; i++) {
+    for (let j = i; j < this[0].length; j++) {
+      [this[i][j], this[j][i]] = [this[j][i], this[i][j]];
     }
-    return this;
-  },
-});
+  }
+  return this;
+};
 
 Object.defineProperty(Array.prototype, "mirror", {
   value: function () {

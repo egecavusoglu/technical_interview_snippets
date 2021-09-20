@@ -15,20 +15,22 @@ Given a binary tree, you need to compute the length of the diameter of the tree.
  * @param {TreeNode} root
  * @return {number}
  */
-var diameterOfBinaryTree = function (root) {
-  let diameter = 0;
+var diameterOfBinaryTree = function(root) {
 
-  const findDiameter = (node) => {
-    if (!node) return 0;
+    let diameter = 0;
 
-    const left = findDiameter(node.left);
-    const right = findDiameter(node.right);
+    const findDiameter = (node) => {
+        if (!node) return 0;
 
-    diameter = Math.max(diameter, left + right);
+        const left = findDiameter(node.left); // depth of left subtree
+        const right = findDiameter(node.right); // depth of right subtree
 
-    return Math.max(left, right) + 1;
-  };
-  findDiameter(root);
-  return diameter;
+        diameter = Math.max(diameter,  left + right); // update diameter if necessary
+
+        return Math.max(left, right) + 1; // return depth rooted at `node` => depth of the bigger subtree + itself.
+    }
+    findDiameter(root);
+    return diameter;
+};
 };
 ```

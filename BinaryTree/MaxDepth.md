@@ -15,11 +15,10 @@
  */
 var maxDepth = function (root) {
   if (!root) return 0;
-  if (!root.left && !root.right) return 1;
 
-  const left = maxDepth(root.left) + 1;
-  const right = maxDepth(root.right) + 1;
+  const left = maxDepth(root.left); // get depth of left subtree
+  const right = maxDepth(root.right); // get depth of right subtree
 
-  return Math.max(left, right);
+  return Math.max(left, right) + 1;
 };
 ```

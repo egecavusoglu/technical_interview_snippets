@@ -32,12 +32,13 @@ var isValid = function (s) {
   let stack = [];
   for (let i = 0; i < s.length; i++) {
     if (s[i] == "(" || s[i] == "{" || s[i] == "[") {
+      // console.log("PUSHING", s[i])
       stack.push(s[i]);
     } else {
-      if (dic[stack[stack.length - 1]] != s[i]) {
+      const el = stack.pop();
+      if (dic[el] != s[i]) {
         return false;
       }
-      stack.pop();
       pairs++;
     }
   }
