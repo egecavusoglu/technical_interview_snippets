@@ -5,7 +5,7 @@
 - [Two Sum](./Array&String/TwoSum.md)
 - [Valid Palindrome](./Array&String/ValidPalindrome.md)
 - [String to Integer](./Array&String/StringToInteger.md)
-- [Reverse String](./Array&String/ReverseString.md)
+- [Reverse String](./Arraxy&String/ReverseString.md)
 - [Reverse Words in a String](./Array&String/ReverseWords.md)
 - [Reverse Words in a String 2](./Array&String/ReverseWords2.md)
 - [Longest Palindromic Substring](./Array&String/LongestPalindromicSubstring.md)
@@ -18,7 +18,6 @@
 - [Find All Numbers Disappeared in Array](./Array&String/FindAllNumbersDisappeared.md)
 - [Single Number](./Array&String/SingleNumber.md)
 - [Binary Search](./Array&String/BinarySearch.md)
-- [Valid Parentheses](./Array&String/ValidParentheses.md)
 - [Valid Parentheses](./Array&String/ValidParentheses.md)
 - [Rotate Array](./Array&String/RotateArray.md)
 - [Peak Index Mountain](./Array&String/PeakIndexMountain.md)
@@ -37,9 +36,12 @@
 - [Lowest Common Ancestor](./BinaryTree/LowestCommonAncestor.md)
 - [Diameter of Binary Tree](./BinaryTree/DiameterBinaryTree.md)
 - [Invert Binary Tree](./BinaryTree/InvertBinaryTree.md)
-- [Level Order Traversal 2](./BinaryTree/InvertBinaryTree.md)
-- [Max Depth](./BinaryTree/InvertBinaryTree.md)
+- [Level Order Traversal 2](./BinaryTree/LevelOrderTraversal2.md)
+- [Max Depth](./BinaryTree/MaxDepth.md)
 - [Path Sum](./BinaryTree/PathSum.md)
+- [Average of Levels in Binary Tree](./BinaryTree/average-of-levels-in-binary-tree)
+- [Minimum Depth of Binary Tree](./BinaryTree/minimum-depth-of-binary-tree.md)
+- [Binary Tree Level Order Traversal]()
 
 ## Sort & Search
 
